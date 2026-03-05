@@ -91,10 +91,6 @@ export function NextSteps() {
             </motion.div>
           )}
         </AnimatePresence>
-
-        <p className="mt-8 text-[10px] text-white/20 uppercase tracking-[0.4em] font-black italic">
-          VÁLIDO POR LOS PRÓXIMOS 7 DÍAS NATURALES.
-        </p>
       </div>
     </section>
   );

@@ -182,7 +182,7 @@ export const PLANS: Plan[] = [
     name: 'PLAN ESENCIA',
     duration: '2 meses',
     months: 2,
-    objective: 'Construcción de base estratégica y presencia profesional.',
+    objective: 'Construye la base estratégica de tu presencia digital.',
     includes: [
       'Mes 1 – Fase 1',
       'Mes 2 – Fase 2'
@@ -199,7 +199,7 @@ export const PLANS: Plan[] = [
     name: 'PLAN IMPULSO',
     duration: '4 meses',
     months: 4,
-    objective: 'Autoridad digital + generación de prospectos + conversión.',
+    objective: 'Contenido estratégico que posiciona tu marca y genera oportunidades.',
     includes: [
       'Mes 1 – Fase 1',
       'Mes 2 – Fase 2',
@@ -216,7 +216,7 @@ export const PLANS: Plan[] = [
     name: 'PLAN DOMINIO',
     duration: '5 meses',
     months: 5,
-    objective: 'Sistema completo de crecimiento y posicionamiento dominante.',
+    objective: 'Una estructura digital diseñada para escalar tu negocio.',
     includes: [
       'Mes 1 – Fase 1',
       'Mes 2 – Fase 2',
