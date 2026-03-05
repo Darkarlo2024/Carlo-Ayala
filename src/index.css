@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-evogar-black: #0B0B0B;
+  --color-evogar-dark: #121212;
+  --color-evogar-blue: #0066FF;
+  --color-auralia-coral: #E68F86;
+  --color-auralia-coral-soft: #F2A49C;
+  --color-auralia-coral-light: #F6C7C2;
+  --color-auralia-gray: #5A5A5E;
+  --color-auralia-bg: #F4F4F4;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-evogar-black text-white antialiased selection:bg-evogar-blue/30;
+    /* Radial gradient background inspired by PDF pages 2 and 17 */
+    background: radial-gradient(circle at 0% 0%, rgba(0, 102, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 100% 100%, rgba(0, 102, 255, 0.05) 0%, transparent 50%),
+                #0B0B0B;
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3 {
+    @apply tracking-tighter;
+  }
+}
+
+@layer components {
+  .evogar-card {
+    @apply bg-evogar-dark border border-white/5 rounded-2xl backdrop-blur-sm transition-all duration-500;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 102, 255, 0.02);
+  }
+  
+  .evogar-card:hover {
+    @apply border-auralia-coral/20;
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.6), 0 0 30px rgba(230, 143, 134, 0.08);
+  }
+
+  .evogar-button-primary {
+    @apply bg-gradient-to-r from-evogar-blue to-auralia-coral text-white font-black py-5 px-12 rounded-2xl shadow-[0_10px_30px_rgba(0,102,255,0.2)] hover:shadow-[0_15px_40px_rgba(230,143,134,0.4)] hover:-translate-y-1 transition-all duration-500 active:scale-95 text-xs uppercase italic tracking-[0.2em];
+  }
+
+  .evogar-button-outline {
+    @apply border-2 border-white/10 text-white font-black py-5 px-12 rounded-2xl hover:bg-white hover:text-evogar-black hover:border-white transition-all duration-500 text-xs uppercase italic tracking-[0.2em];
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 py-32;
+  }
+
+  .geometric-pattern {
+    background-image: radial-gradient(circle at 2px 2px, rgba(230,143,134,0.03) 1px, transparent 0);
+    background-size: 40px 40px;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+  border: 2px solid #0B0B0B;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E68F86;
+}
+
+.heading-italic {
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+}
