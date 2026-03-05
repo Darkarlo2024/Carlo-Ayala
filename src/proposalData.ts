@@ -299,6 +299,6 @@ export const SCOPE = {
   terms: {
     responseTime: 'Menos de 24 horas hábiles',
     revisions: 'Hasta 2 rondas por pieza',
-    contract: 'Mínimo 3 meses sugerido'
+    contract: 'PLAN IMPULSO'
   }
 };
